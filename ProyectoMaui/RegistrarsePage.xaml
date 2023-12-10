@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoMaui.RegistrarsePage"
+             Title="RegistrarsePage"
+             BackgroundColor="Black">
+
+    <VerticalStackLayout>
+
+        <Button Margin="0,10,7,10"
+            Text="&lt;  Volver"
+            TextColor="Black"
+            FontAttributes="Bold"
+            Background="Transparent"
+            Grid.Row="1"
+            WidthRequest="100"
+            HorizontalOptions="Start"
+            Clicked="OnClickVolver"/>
+
+
+        <StackLayout WidthRequest="320" Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0">
+            <Label
+                Text="REGISTRATE"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="45"
+                HorizontalOptions="Start"/>
+
+            
+                                    <Label
+            Text="NOMBRE"
+            TextColor="White"
+            Margin="0,60,0,0"
+            FontSize="15"
+            TextDecorations="None"/>
+
+            <Frame HeightRequest="50" Margin="0,15,0,0" BorderColor="Black" Padding="0" >
+                <Entry WidthRequest="310" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                   Placeholder="Said"
+                   x:Name="Nombre"
+                   TextColor="Black"/>
+            </Frame>
+
+            
+                                    <Label
+            Text="CORREO"
+            TextColor="White"
+            Margin="0,15,0,0"
+            FontSize="15"
+            TextDecorations="None"/>
+
+            <Frame HeightRequest="50" Margin="0,10,0,0" BorderColor="Black" Padding="0">
+                <Entry WidthRequest="310" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                Placeholder="Ej:saidcarrera@icloud.com"
+                x:Name="Correo"
+                TextColor="Black"/>
+            </Frame>
+
+            
+                                    <Label
+            Text="CONTRASEÑA"
+            TextColor="White"
+            Margin="0,15,0,0"
+            FontSize="15"
+            TextDecorations="None"/>
+
+            <Frame HeightRequest="50" Margin="0,10,0,0" BorderColor="Black" Padding="0">
+                <Entry WidthRequest="310" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                Placeholder="**********"
+                x:Name="Contrasena"
+                IsPassword="True"
+                TextColor="Black"/>
+            </Frame>
+
+            <Button WidthRequest="200" HeightRequest="55" Margin="0,60,0,0" BackgroundColor="White" CornerRadius="20" Padding="0"
+                Text="Crear Cuenta"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="15"
+                Clicked="OnClickCrearCuenta"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
